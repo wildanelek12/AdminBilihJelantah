@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Jumlah Minyak Yang Disetor"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_jumlah_liter"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_jumlah_liter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="50 Liter"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/textView166"
+
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView166"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Jumlah Saldo yang didapat"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_bonus_saldo"
+                    app:layout_constraintStart_toStartOf="@+id/tv_jumlah_liter"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_jumlah_liter" />
+
+                <TextView
+                    android:id="@+id/tv_bonus_saldo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rp.5.000"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/textView1666"
+
+                    app:layout_constraintStart_toStartOf="@+id/textView166"
+                    app:layout_constraintTop_toBottomOf="@+id/textView166" />
+                <TextView
+                    android:id="@+id/textView1666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Metode Setor"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_bonus_saldo"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_bonus_saldo" />
+
+                <TextView
+                    android:id="@+id/tv_metode_setor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rp.5.000"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/textView1666"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1666" />
+                <TextView
+                    android:id="@+id/textView16666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Metode Pembayaran"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_metode_setor"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_metode_setor" />
+
+                <TextView
+                    android:id="@+id/tv_metode_bayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rp.5.000"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/textView16666"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16666" />
+                <TextView
+                    android:id="@+id/textView166666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Nama Nasabah"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_metode_bayar"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_metode_bayar" />
+
+                <TextView
+                    android:id="@+id/tv_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rp.5.000"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/textView166666"
+                    app:layout_constraintTop_toBottomOf="@+id/textView166666" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_stat_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Tanggal Peneyetoran"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_tgl_setor"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_tgl_setor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="21-09-2021"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_star_no_bank"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_stat_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_stat_bank" />
+
+                <TextView
+                    android:id="@+id/tv_star_no_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Kode Penyetoran"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_kode_setor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_tgl_setor"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tgl_setor" />
+
+                <TextView
+                    android:id="@+id/tv_kode_setor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="BN1201"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_star_nasabah"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_star_no_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_star_no_bank" />
+                <TextView
+                    android:id="@+id/tv_stat_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Alamat"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_kode_setor"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_kode_setor" />
+
+                <TextView
+                    android:id="@+id/tv_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="BN1201"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_stat_alamat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_stat_alamat" />
+
+                <TextView
+                    android:id="@+id/tv_stat_no_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="No HP"
+                    android:textColor="@color/orange"
+                    android:textSize="8sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_alamat"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_alamat" />
+
+                <TextView
+                    android:id="@+id/tv_no_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="BN1201"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_stat_no_hp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_stat_no_hp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="0dp"
+                android:background="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

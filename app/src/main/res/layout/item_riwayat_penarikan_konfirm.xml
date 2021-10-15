@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_20sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="@dimen/_7sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Jumlah Penarikan"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_jumlah_tarik"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_jumlah_tarik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Rp.25.000"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/textView166"
+
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/textView166"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Tanggal Penarikan"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_tanggal_tarik"
+
+                    app:layout_constraintStart_toStartOf="@+id/tv_jumlah_tarik"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_jumlah_tarik" />
+
+                <TextView
+                    android:id="@+id/tv_tanggal_tarik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="20-09-2021"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/textView1666"
+
+                    app:layout_constraintStart_toStartOf="@+id/textView166"
+                    app:layout_constraintTop_toBottomOf="@+id/textView166" />
+
+                <TextView
+                    android:id="@+id/textView1666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Kode Penarikan"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_kode_tarik"
+
+                    app:layout_constraintStart_toStartOf="@+id/tv_tanggal_tarik"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_tarik" />
+
+                <TextView
+                    android:id="@+id/tv_kode_tarik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="A0987"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_tanggal_tarik"
+                    app:layout_constraintStart_toStartOf="@+id/textView1666"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1666" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_stat_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Nama Bank"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_din_bank"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_din_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="BRI"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_star_no_bank"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_stat_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_stat_bank" />
+
+                <TextView
+                    android:id="@+id/tv_star_no_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="No Rekening"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_din_no_bank"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_din_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_din_bank" />
+
+                <TextView
+                    android:id="@+id/tv_din_no_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/bold"
+                    android:text="1234567890"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_star_nasabah"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_star_no_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_star_no_bank" />
+
+                <TextView
+                    android:id="@+id/tv_star_nasabah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Nama Nasabah"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_din_nasabah"
+                    app:layout_constraintStart_toStartOf="@+id/tv_din_no_bank"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_din_no_bank" />
+
+                <TextView
+                    android:id="@+id/tv_din_nasabah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:maxLength="15"
+                    android:text="Agung Firdamansyah"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_star_nasabah"
+                    app:layout_constraintStart_toStartOf="@+id/tv_star_nasabah"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_star_nasabah" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:text="Konfirmasi"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <EditText
+        android:id="@+id/et_hari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hari"/>
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/et_tanggal"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pilih Tanggal"/>
+
+</LinearLayout>
